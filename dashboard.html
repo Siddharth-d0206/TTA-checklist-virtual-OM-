@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Firebase App (v8.x) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+   
+</head>
+<body>
+    <h1>Inventory Dashboard</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Computer Model</th>
+                <th>OS Installed</th>
+                <th>Hardware Test</th>
+                <th>Cleaning</th>
+                <th>Accessories</th>
+                <th>Serial Number</th>
+                <th>Notes</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="inventory-table">
+        </tbody>
+    </table>
+<script src="dashboard.js"></script>
+<a href="index.html">Click here to submit a new checklist.</a>
+</body>
+</html>

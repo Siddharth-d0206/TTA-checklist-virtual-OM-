@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refurbishing Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Firebase App (v8.x) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <h1>Refurbishing Checklist</h1>
+    <form id="checklist-form">
+        <label>Computer Model:</label>
+        <input type="text" id="computerModel" required><br><br>
+
+        <label>OS Installed:</label>
+        <input type="checkbox" id="osInstalled"><br><br>
+
+        <label>Hardware Test Passed:</label>
+        <input type="checkbox" id="hardwareTest"><br><br>
+
+        <label>Cleaned:</label>
+        <input type="checkbox" id="cleaning"><br><br>
+
+        <label>Accessories:</label>
+        <input type="text" id="accessories"><br><br>
+
+        <label>Serial number:</label>
+        <input type="number" id="serialnum"><br><br>
+        
+        <label>Notes: Please limit to a few words</label>
+        <input type="text" id="notes"><br><br>
+
+        <label>Status:</label>
+        <select id="status">
+            <option value="Ready to Sell">In Progress</option>
+            <option value="In Progress">Completed</option>
+        </select><br><br>
+
+        <button type="submit">Submit Checklist</button>
+    </form>
+
+    <a href="dashboard.html">Click here to view the Dashboard when submitted.</a>
+    <script src="checklist.js"></script>
+</body>
+</html>
